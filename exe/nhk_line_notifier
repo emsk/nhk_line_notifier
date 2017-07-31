@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require "nhk_line_notifier"
