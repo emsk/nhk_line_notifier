@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "nhk_line_notifier"
+
+NhkLineNotifier::CLI.start
