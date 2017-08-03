@@ -78,21 +78,6 @@ Style/PercentLiteralDelimiters:
   Exclude:
     - 'nhk_line_notifier.gemspec'
 
-# Offense count: 37
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'Gemfile'
-    - 'Rakefile'
-    - 'bin/console'
-    - 'exe/nhk_line_notifier'
-    - 'lib/nhk_line_notifier.rb'
-    - 'lib/nhk_line_notifier/version.rb'
-    - 'nhk_line_notifier.gemspec'
-    - 'spec/spec_helper.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/UnneededPercentQ:
