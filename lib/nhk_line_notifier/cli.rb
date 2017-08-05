@@ -25,5 +25,12 @@ module NhkLineNotifier
       client.search
       client.notify
     end
+
+    desc 'version, -v, --version', 'Print the version'
+    map %w[-v --version] => :version
+
+    def version
+      puts "nhk_line_notifier #{NhkLineNotifier::VERSION}"
+    end
   end
 end
