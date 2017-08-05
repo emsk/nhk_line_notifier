@@ -1,13 +1,8 @@
-require 'net/http'
-require 'nhk_program'
+require 'nhk_line_notifier/client'
 require 'thor'
-require 'time'
 
 module NhkLineNotifier
   class CLI < Thor
-    NHK_ENDPOINT = 'http://api.nhk.or.jp/v2/pg'.freeze
-    LINE_NOTIFY_ENDPOINT = 'https://notify-api.line.me/api/notify'.freeze
-
     default_command :execute
 
     desc 'execute', 'Search NHK programs and notify via LINE Notify'
@@ -19,38 +14,16 @@ module NhkLineNotifier
     option :word, type: :string, aliases: '-w'
 
     def execute
-      programs = search
-      notify(programs)
-    end
-
-    private
-
-    def search
-      client = NHKProgram.new(endpoint: NHK_ENDPOINT, api_key: options[:nhk_key])
-
-      data = client.list(options[:area], options[:service], Date.today + options[:date])
-
-      word = /#{Regexp.quote(options[:word])}/
-      programs = data.list.send(options[:service]).map do |program|
-        next unless word =~ program.title || word =~ program.content
-        "[#{Time.parse(program.start_time).strftime('%Y-%m-%d %H:%M')}]\n#{program.title}"
-      end
-
-      programs.compact
-    end
-
-    def notify(programs)
-      return if programs.empty?
-
-      uri = URI.parse(LINE_NOTIFY_ENDPOINT)
-      https = Net::HTTP.new(uri.host, uri.port)
-      https.use_ssl = true
-
-      req = Net::HTTP::Post.new(uri.request_uri)
-      req['Authorization'] = "Bearer #{options[:line_key]}"
-      req.set_form_data(message: "\n#{programs.join("\n")}")
-
-      https.request(req)
+      client = Client.new(
+        area:     options[:area],
+        service:  options[:service],
+        date:     options[:date],
+        nhk_key:  options[:nhk_key],
+        line_key: options[:line_key],
+        word:     options[:word]
+      )
+      client.search
+      client.notify
     end
   end
 end
