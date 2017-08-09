@@ -1,6 +1,7 @@
 # NhkLineNotifier
 
 [![Build Status](https://travis-ci.org/emsk/nhk_line_notifier.svg?branch=master)](https://travis-ci.org/emsk/nhk_line_notifier)
+[![Coverage Status](https://coveralls.io/repos/github/emsk/nhk_line_notifier/badge.svg?branch=master)](https://coveralls.io/github/emsk/nhk_line_notifier)
 
 Search NHK programs and notify via LINE Notify.
 
