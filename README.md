@@ -1,5 +1,7 @@
 # NhkLineNotifier
 
+[![Build Status](https://travis-ci.org/emsk/nhk_line_notifier.svg?branch=master)](https://travis-ci.org/emsk/nhk_line_notifier)
+
 Search NHK programs and notify via LINE Notify.
 
 ## Installation
