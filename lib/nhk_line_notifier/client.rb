@@ -23,7 +23,7 @@ module NhkLineNotifier
       data = list(@area, @service, Date.today + @date)
 
       word = /#{Regexp.quote(@word)}/
-      @programs = data.list.send(@service).map do |program|
+      @programs = data.list.values[0].map do |program|
         next unless word =~ program.title || word =~ program.content
         "[#{Time.parse(program.start_time).strftime('%Y-%m-%d %H:%M')}]\n#{program.title}"
       end
