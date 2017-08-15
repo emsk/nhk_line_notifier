@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/emsk/nhk_line_notifier/badge.svg?branch=master)](https://coveralls.io/github/emsk/nhk_line_notifier)
 [![Code Climate](https://codeclimate.com/github/emsk/nhk_line_notifier/badges/gpa.svg)](https://codeclimate.com/github/emsk/nhk_line_notifier)
 [![Dependency Status](https://gemnasium.com/badges/github.com/emsk/nhk_line_notifier.svg)](https://gemnasium.com/github.com/emsk/nhk_line_notifier)
+[![Inline docs](http://inch-ci.org/github/emsk/nhk_line_notifier.svg?branch=master)](http://inch-ci.org/github/emsk/nhk_line_notifier)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Search NHK programs and notify via LINE Notify.
