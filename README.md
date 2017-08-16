@@ -16,7 +16,7 @@ WIP
 ## Usage
 
 ```sh
-$ nhk_line_notifier --area 320 --service s3 --date 0 --nhk-key NHK_API_KEY --line-key LINE_API_KEY --word ネコ
+$ nhk_line_notifier --area 松江 --service ＮＨＫＢＳプレミアム --date 0 --nhk-key NHK_API_KEY --line-key LINE_API_KEY --word ネコ
 ```
 
 ## Supported Ruby Versions
