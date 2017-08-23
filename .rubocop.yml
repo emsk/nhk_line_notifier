@@ -6,6 +6,10 @@ AllCops:
 Layout/IndentHeredoc:
   Enabled: false
 
+Layout/SpaceInsideBlockBraces:
+  Exclude:
+    - 'Gemfile'
+
 Layout/TrailingWhitespace:
   Exclude:
     - 'spec/**/*.rb'
