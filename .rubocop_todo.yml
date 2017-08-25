@@ -42,12 +42,6 @@ Style/Documentation:
     - 'test/**/*'
     - 'lib/nhk_line_notifier/cli.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/MutableConstant:
-  Exclude:
-    - 'lib/nhk_line_notifier/version.rb'
-
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: PreferredDelimiters.
