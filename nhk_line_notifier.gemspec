@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['emsk']
   spec.email         = ['emsk1987@gmail.com']
 
-  spec.summary       = %q{Search NHK programs and notify via LINE Notify}
-  spec.description   = %q{Search NHK programs and notify via LINE Notify}
+  spec.summary       = 'Search NHK programs and notify via LINE Notify'
+  spec.description   = 'Search NHK programs and notify via LINE Notify'
   spec.homepage      = 'https://github.com/emsk/nhk_line_notifier'
   spec.license       = 'MIT'
 
