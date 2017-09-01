@@ -21,10 +21,6 @@ Layout/SpaceAroundOperators:
     - 'nhk_line_notifier.gemspec'
 
 # Offense count: 1
-Metrics/AbcSize:
-  Max: 30
-
-# Offense count: 1
 # Configuration parameters: CountComments, ExcludedMethods.
 Metrics/BlockLength:
   Max: 26
