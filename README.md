@@ -1,9 +1,9 @@
 # NhkLineNotifier
 
-[![Build Status](https://travis-ci.org/emsk/nhk_line_notifier.svg?branch=master)](https://travis-ci.org/emsk/nhk_line_notifier)
-[![Coverage Status](https://coveralls.io/repos/github/emsk/nhk_line_notifier/badge.svg?branch=master)](https://coveralls.io/github/emsk/nhk_line_notifier)
+[![Build Status](https://travis-ci.org/emsk/nhk_line_notifier.svg?branch=main)](https://travis-ci.org/emsk/nhk_line_notifier)
+[![Coverage Status](https://coveralls.io/repos/github/emsk/nhk_line_notifier/badge.svg?branch=main)](https://coveralls.io/github/emsk/nhk_line_notifier)
 [![Code Climate](https://codeclimate.com/github/emsk/nhk_line_notifier/badges/gpa.svg)](https://codeclimate.com/github/emsk/nhk_line_notifier)
-[![Inline docs](http://inch-ci.org/github/emsk/nhk_line_notifier.svg?branch=master)](http://inch-ci.org/github/emsk/nhk_line_notifier)
+[![Inline docs](http://inch-ci.org/github/emsk/nhk_line_notifier.svg?branch=main)](http://inch-ci.org/github/emsk/nhk_line_notifier)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Search NHK programs and notify via LINE Notify.
